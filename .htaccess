@@ -1,0 +1,10 @@
+AddHandler application/x-httpd-php .php .html .htm
+
+RewriteEngine On
+RewriteRule ^donat$ /donate.php
+RewriteRule ^monitoring$ /monitoring.php
+RewriteRule ^map$ /map.php
+RewriteRule ^begin$ /begin.php
+RewriteRule ^rate$ /rate.php
+RewriteRule ^login$ /login.php
+RewriteRule ^help$ /help.php

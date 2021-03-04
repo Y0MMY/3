@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+<meta charset="UTF-8">
+<title>Sublime RolePlay</title>
+<meta name="yandex-verification" content="44dcf5cf16b46586"/>
+<meta name="author" content="https://vk.com/rpsublime">
+<meta name="description" content="Sublime RolePlay"> 
+<meta name="keywords" content="GTA San Andreas Multiplayer, Sublime RolePlay, Sublime, San Andreas MultiPlayer, Grand Theft Auto San Andreas"> 
+<link type="text/css" rel="StyleSheet" href="css/bootstrap.min.css"/>
+<link type="text/css" rel="StyleSheet" href="css/style.css"/>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+<link rel="image_src" href="images/imagemeta.png"> 
+
+<style>
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    width: 95%;
+    height: 40px;
+    background-color: #000;
+    border-radius: 31px;
+    align-items: center;
+}
+.row > .ones {
+    width: 216px;
+        font-weight: 600;
+}
+.row > .twos {
+    width: 216px;
+        font-weight: 600;
+}
+.row > .three {
+    width: 216px;
+        font-weight: 600;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: #101010 !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+center > .row > .text1 {
+border: 0;
+    padding: 0px 26px;
+    right: 0;
+    color: #c3bdbd;
+    border-radius: 31px;
+    width: 359px;
+    height: 29px;
+    background-color: #101010;
+        font-weight: 600;
+}
+.auth {
+    background: url(../images/sublimev2/auth.png) no-repeat -5px -5px;
+    margin: 11px 0 0 -6px;
+    width: 123px;
+    height: 51px;
+    display: block;
+}
+.auth:hover {
+   background: url(../images/sublimev2/auth.png) no-repeat -5px -56px;
+}
+.vost {
+    background: url(../images/sublimev2/vost.png) no-repeat -5px -5px;
+    margin: 11px 0 0 -6px;
+    width: 274px;
+    height: 37px;
+    display: block;
+    border-radius: 18px;
+}
+.vost:hover {
+   background: url(../images/sublimev2/vost.png) no-repeat -5px -56px;
+}
+#btn-submit {
+    border-radius: 18px;
+    height: 37px;
+    width: 176px;
+    font-size: 18px;
+    background-color: #d67212;
+        margin-right: 20px;
+}
+.stroke {
+    display: flex;
+    justify-content: center;
+    margin-left: 154px;
+}
+center > h3 {
+    color: #757575;
+    margin-top: 9px;
+    margin-bottom: -15px;
+}
+</style>
+
+
+</head>
+<body>
+<div id="sublime-wrapper">
+<div class="sublime-container">
+<header id="sublime-header">
+<div class="sublime-logo">
+<a href="http://rp-sublime.ru/"><img src="images/sublimev2/sublime-logo.png" alt="SAMP Sublime RolePlay"/></a>
+</div>
+</header>
+<nav id="sublime-nav-box">
+<ul class="sublime-menu clearfix">
+<li><a href="http://rp-sublime.ru/" class="menu menu1"></a></li>
+<li><a href="http://rp-sublime.ru/forum/ class="menu menu2"></a></li>
+<li><a href="http://rp-sublime.ru/monitoring?a=1" class="menu menu7"></a></li>
+<li><a href="http://rp-sublime.ru/rate?a=money" class="menu menu8"></a></li>
+<li><a href="http://rp-sublime.ru/help" class="menu menu9"></a></li>
+<li><a href="http://rp-sublime.ru/map" class="menu menu10"></a></li>
+</ul>
+</nav>
+<div id="sublime-main" class="clearfix">
+<div id="sublime-content"> 
+<div class="content-name news">
+<div class="date" style="top: 23px;left: 19px;"><span class="num">SUB</span></div>	
+<div class="title">Пополнение донат счёта</div>
+</div>
+<div class="news-box clearfix">
+	<center>
+	    <form action="http://rp-sublime.ru/donate/index.php">
+		<div class="row">
+		    <input name="action" value="fk_go" class="main_input text" type="hidden">
+		    <span class="ones">Ваш игровой Никнейм:</span>
+			<input type="text" class="text1" placeholder="Ваш игровой никнейм" name="account" id="account" />
+		</div><br>
+		<div class="row">
+		    <span class="twos">Сумма пополнения:</span>
+			<input type="text" placeholder="Сумма пополнения" class="text1" name="sum" id="sum" />
+		</div>
+			<br>
+			<div class="stroke"><input type="submit" id="btn-submit" value="Оплатить"/></div>
+			</form>
+	</center>
+</div>
+
+</div>
+<aside id="sublime-sidebar">
+
+<div class="aside_buttons">
+<a href="http://rp-sublime.ru/begin" class="start-play-two"></a>
+<a href="http://rp-sublime.ru/login" class="enter_account"></a><a href="http://rp-sublime.ru/donat" class="shop_link"></a>
+</div>
+
+<div class="block">
+<div class="title mon"></div>
+<div class="middle">
+<div class="monitoring">
+
+<ul>
+<li>Sublime RolePlay<?= $onliner ?></li><li><span class="name">IP:</span> 188.127.240.129:7777</li><li><span class="name">Игроков:</span> <?= $aInformation['players'] ?> / <?= $aInformation['maxplayers'] ?></li></ul>
+</div>
+<div class="progress-box"><div class="progress-bar"></div></div>
+</div>
+<div class="bottom"></div>
+</div>
+
+<div class="block">
+<div class="title youtube"></div>
+<div class="middle">
+<iframe width="225" height="160" src="https://www.youtube.com/embed/RHqP-FogOfc" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="bottom"></div>
+</div>
+
+<div class="block">
+<div class="title vk"></div>
+<div class="middle">
+<script type="text/javascript" src="http://vk.com/js/api/openapi.js?87"></script>
+<div id="vk_groups"></div>
+
+</div>
+<div class="bottom"></div>
+</div>
+</aside>
+</div>
+<div id="sublime-footer">
+<div class="row">
+<div class="col-xs-6 col-sm-6">
+<div class="copyright">
+Любое копирование материалов сайта запрещено
+<span>support@rp-sublime.ru</span>
+</div>
+</div>
+<div class="col-xs-6 col-sm-6 pull-right">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
